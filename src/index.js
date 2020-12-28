@@ -14,6 +14,7 @@ app.use(express.json());
 //routes
 app.use(require('./routes/rutas'));
 
+//listener
 app.listen(app.get('port'),() => {
   console.log("Server on port "+app.get('port'));
 });
